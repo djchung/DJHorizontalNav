@@ -1,0 +1,11 @@
+This is based on Apple's PageControl example:
+
+http://developer.apple.com/library/ios/#samplecode/PageControl/Listings/Classes_iPhone_PhoneContentController_m.html
+
+In the folder, DJHorizontalNavClasses, are files that slow the very basic setup for creating a horizontal navigation control with view controllers. It's all based on the PageControl example.
+
+DJHorizontalNavigation.xcodeproj is an example implementing horizontal navigation and demonstrates that each view controller within the navigation behaves like any other view controller: writing in textfields, sending notifications, popping up alerts, pushing view controllers from a table and using the camera. 
+
+One thing to keep in mind is that the container view controller must present and dismiss the UIImagePickerController, otherwise it won't size correctly. See the project for details.
+
+Would love any feedback!
