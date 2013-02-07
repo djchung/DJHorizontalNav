@@ -61,7 +61,13 @@
     DJCarTableViewController *ctvc = [[DJCarTableViewController alloc]init];
     UINavigationController *ctvcnav = [[UINavigationController alloc]initWithRootViewController:ctvc];
     DJCameraViewController *cvc = [[DJCameraViewController alloc]init];
+    /*
+    in order for UIImagePickerController to display properly, create a property that 
+     is of type DJExampleContainerViewController and set it to self. This property will 
+     be used to present and dismiss the UIImagePickerController.
+    */
     cvc.containerVC = self;
+    
     UINavigationController *cvcnav = [[UINavigationController alloc]initWithRootViewController:cvc];
     self.viewControllers = [[NSArray alloc]initWithObjects:hvcnav, ctvcnav, cvcnav, nil];
     
